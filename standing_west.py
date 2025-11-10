@@ -1,0 +1,17 @@
+standings_data_western = [
+    {"Team": "Oklahoma City Thunder", "W": 10, "L": 1, "PCT": 0.9, "GB": "-", "L10": "9-1", "Strk": "W2"},
+    {"Team": "San Antonio Spurs", "W": 7, "L": 2, "PCT": 0.778, "GB": "2.0", "L10": "7-2", "Strk": "W2"},
+    {"Team": "Denver Nuggets", "W": 7, "L": 2, "PCT": 0.778, "GB": "2.0", "L10": "7-2", "Strk": "W4"},
+    {"Team": "Los Angeles Lakers", "W": 7, "L": 3, "PCT": 0.7, "GB": "2.5", "L10": "7-3", "Strk": "L1"},
+    {"Team": "Houston Rockets", "W": 6, "L": 3, "PCT": 0.667, "GB": "3.0", "L10": "6-3", "Strk": "W1"},
+    {"Team": "Minnesota Timberwolves", "W": 6, "L": 4, "PCT": 0.6, "GB": "3.5", "L10": "6-4", "Strk": "W2"},
+    {"Team": "Portland Trail Blazers", "W": 5, "L": 4, "PCT": 0.556, "GB": "4.0", "L10": "5-4", "Strk": "L1"},
+    {"Team": "Golden State Warriors", "W": 6, "L": 5, "PCT": 0.545, "GB": "4.0", "L10": "5-5", "Strk": "W1"},
+    {"Team": "Phoenix Suns", "W": 5, "L": 5, "PCT": 0.5, "GB": "4.5", "L10": "5-5", "Strk": "W2"},
+    {"Team": "Memphis Grizzlies", "W": 4, "L": 7, "PCT": 0.364, "GB": "6.0", "L10": "3-7", "Strk": "L1"},
+    {"Team": "Utah Jazz", "W": 3, "L": 6, "PCT": 0.333, "GB": "6.0", "L10": "3-6", "Strk": "L2"},
+    {"Team": "LA Clippers", "W": 3, "L": 6, "PCT": 0.333, "GB": "6.0", "L10": "3-6", "Strk": "L4"},
+    {"Team": "Sacramento Kings", "W": 3, "L": 7, "PCT": 0.3, "GB": "6.5", "L10": "3-7", "Strk": "L2"},
+    {"Team": "Dallas Mavericks", "W": 3, "L": 7, "PCT": 0.3, "GB": "6.5", "L10": "3-7", "Strk": "W1"},
+    {"Team": "New Orleans Pelicans", "W": 2, "L": 7, "PCT": 0.222, "GB": "7.0", "L10": "2-7", "Strk": "L1"},
+]

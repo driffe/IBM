@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python restructure_teams_v2.py:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
