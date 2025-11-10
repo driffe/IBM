@@ -364,6 +364,43 @@
         let allTeams = [];
         let currentTab = 'teams';
 
+        // NBA Team Colors Mapping - Official team colors for all 30 teams
+        const teamColors = {
+            // Eastern Conference
+            'Atlanta Hawks': 'from-red-600 to-yellow-500',
+            'Boston Celtics': 'from-green-600 to-green-700',
+            'Brooklyn Nets': 'from-gray-900 to-gray-700',
+            'Charlotte Hornets': 'from-teal-500 to-purple-600',
+            'Chicago Bulls': 'from-red-600 to-red-700',
+            'Cleveland Cavaliers': 'from-red-900 to-yellow-600',
+            'Detroit Pistons': 'from-red-600 to-blue-700',
+            'Indiana Pacers': 'from-blue-900 to-yellow-500',
+            'Miami Heat': 'from-red-600 to-red-800',
+            'Milwaukee Bucks': 'from-green-700 to-green-800',
+            'New York Knicks': 'from-blue-600 to-orange-500',
+            'Orlando Magic': 'from-blue-600 to-blue-800',
+            'Philadelphia 76ers': 'from-red-600 to-blue-700',
+            'Toronto Raptors': 'from-red-600 to-gray-800',
+            'Washington Wizards': 'from-blue-900 to-red-600',
+
+            // Western Conference
+            'Dallas Mavericks': 'from-blue-700 to-blue-600',
+            'Denver Nuggets': 'from-blue-900 to-yellow-500',
+            'Golden State Warriors': 'from-blue-600 to-yellow-400',
+            'Houston Rockets': 'from-red-600 to-gray-700',
+            'Los Angeles Clippers': 'from-red-600 to-blue-700',
+            'Los Angeles Lakers': 'from-purple-600 to-yellow-400',
+            'Memphis Grizzlies': 'from-blue-900 to-blue-600',
+            'Minnesota Timberwolves': 'from-blue-700 to-green-600',
+            'New Orleans Pelicans': 'from-blue-900 to-yellow-600',
+            'Oklahoma City Thunder': 'from-blue-600 to-orange-500',
+            'Phoenix Suns': 'from-purple-600 to-orange-500',
+            'Portland Trail Blazers': 'from-red-600 to-red-800',
+            'Sacramento Kings': 'from-purple-700 to-purple-900',
+            'San Antonio Spurs': 'from-gray-800 to-gray-600',
+            'Utah Jazz': 'from-blue-900 to-yellow-500'
+        };
+
         // Tab switching
         const tabBtns = document.querySelectorAll('.tab-btn');
         const tabContents = document.querySelectorAll('.tab-content');
@@ -409,8 +446,9 @@
             const container = document.getElementById('teamsList');
             container.innerHTML = '';
             teams.forEach((team, index) => {
-                const colors = ['from-blue-500 to-purple-600', 'from-purple-500 to-pink-600', 'from-green-500 to-teal-600', 'from-orange-500 to-red-600'];
-                const color = colors[index % colors.length];
+                // Get team-specific colors from the mapping, or use a default gradient
+                const color = teamColors[team.name] || 'from-gray-600 to-gray-800';
+
                 container.innerHTML += `
                     <div class="card-hover bg-white p-5 rounded-2xl shadow-lg cursor-pointer overflow-hidden relative"
                         onclick="showTeamDetail(${team.id})">
